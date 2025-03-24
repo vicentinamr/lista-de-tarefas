@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciador de Lista de Compras</h1>
+    
+    <div class="container">
+        <!-- Adicionar item -->
+        <input type="text" id="itemInput" placeholder="Digite um item">
+        <button onclick="addItem()">Adicionar</button>
+        
+        <!-- Remover item -->
+        <input type="text" id="removeInput" placeholder="Item a remover">
+        <button onclick="removeItem()">Remover</button>
+        
+        <!-- Pesquisar item -->
+        <input type="text" id="searchInput" placeholder="Nome ou posição">
+        <button onclick="searchItem()">Pesquisar</button>
+
+        <!-- Exibição da lista -->
+        <h2>Lista de Compras</h2>
+        <ul id="shoppingList"></ul>
+
+        <!-- Resultado da pesquisa -->
+        <p id="searchResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
